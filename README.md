@@ -23,40 +23,40 @@ Typical build configuration examples:
 
 GNU compiler, OpenBLAS:
 ```bash
-$ export BLASLIB = OPENBLAS
-$ export PATH_BLAS_OPENBLAS = /usr/local/blas/openblas/lib
-$ export PATH_LAPACK_LIB = $PATH_BLAS_OPENBLAS
+$ export BLASLIB=OPENBLAS
+$ export PATH_BLAS_OPENBLAS=/usr/local/blas/openblas/lib
+$ export PATH_LAPACK_LIB=$PATH_BLAS_OPENBLAS
 $ make
 ```
 
 GNU compiler, MKL (Intel CPU or Intel Xeon Phi):
 ```bash
-$ export BLASLIB = MKL
-$ export PATH_INTEL = /opt/intel
-$ export PATH_BLAS_MKL = $PATH_INTEL/mkl/lib/intel64
-$ export PATH_LAPACK_LIB = $PATH_BLAS_MKL
+$ export BLASLIB=MKL
+$ export PATH_INTEL=/opt/intel
+$ export PATH_BLAS_MKL=$PATH_INTEL/mkl/lib/intel64
+$ export PATH_LAPACK_LIB=$PATH_BLAS_MKL
 $ make
 ```
 
 GNU compiler, OpenBLAS, CUDA (NVIDIA GPU):
 ```bash
-$ export BLASLIB = OPENBLAS
-$ export PATH_BLAS_OPENBLAS = /usr/local/blas/openblas/lib
-$ export PATH_LAPACK_LIB = $PATH_BLAS_OPENBLAS
-$ export GPU_CUDA = CUDA
-$ export GPU_SM_ARCH = 70
-$ export PATH_CUDA = /usr/local/cuda
+$ export BLASLIB=OPENBLAS
+$ export PATH_BLAS_OPENBLAS=/usr/local/blas/openblas/lib
+$ export PATH_LAPACK_LIB=$PATH_BLAS_OPENBLAS
+$ export GPU_CUDA=CUDA
+$ export GPU_SM_ARCH=70
+$ export PATH_CUDA=/usr/local/cuda
 $ make
 ```
 
 GNU compiler, OpenBLAS, ROCM (AMD GPU):
 ```bash
-$ export BLASLIB = OPENBLAS
-$ export PATH_BLAS_OPENBLAS = /usr/local/blas/openblas/lib
-$ export PATH_LAPACK_LIB = $PATH_BLAS_OPENBLAS
-$ export GPU_CUDA = CUDA
-$ export USE_HIP = YES
-$ export PATH_ROCM = /opt/rocm
+$ export BLASLIB=OPENBLAS
+$ export PATH_BLAS_OPENBLAS=/usr/local/blas/openblas/lib
+$ export PATH_LAPACK_LIB=$PATH_BLAS_OPENBLAS
+$ export GPU_CUDA=CUDA
+$ export USE_HIP=YES
+$ export PATH_ROCM=/opt/rocm
 $ make
 ```
 
